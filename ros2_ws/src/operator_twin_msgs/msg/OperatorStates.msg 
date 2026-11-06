@@ -1,0 +1,4 @@
+#Groups the awareness of all the operators in the model and fixes the time stamp of the Operator Awareness model that will be published by the /awareness_state node in /operator_states at 20Hz
+
+std_msgs/Header header # the stamp is copied from the /human_states message that started the calculation.
+OperatorState[] operators # mirrors hunav_msgs/Agents. Publishes the awareness of all the operators in the scene at the same time. 
